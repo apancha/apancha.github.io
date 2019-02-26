@@ -1,0 +1,85 @@
+.navTop {
+    background-color: #343a40;
+    border-bottom: 2px solid aquamarine;
+}
+
+.brand-firstName {
+    color: aquamarine;
+    font-weight: bolder;
+    font-size: 35px;
+}
+
+.brand-lastName {
+    color: darkgray;
+    font-weight: bolder;
+    font-size: 35px;
+}
+
+.brand-subtext {
+    color: aquamarine;
+    font-size: 20px;
+}
+
+.navbar-nav {
+    font-size: 20px;
+}
+
+.navbar-nav li.active > a {
+    border-top: solid aquamarine;
+}
+
+.navbar-nav li > a {
+    border-top: solid;
+}
+
+.main-content {
+    border: solid 2px darkgray;
+    border-radius: 5px;
+    margin-top: 5%;
+}
+
+.myWrapper {
+    padding: 30px;
+}
+
+.prof-img {
+    border: solid 2px darkgray;
+    border-radius: 5px;
+
+}
+
+.img-responsive {
+    width: 100%;
+}
+
+ul {
+    list-style-type: none;
+}
+
+
+
+@media only screen and (max-width: 768px) {
+
+    /* For mobile phones: */
+    .img-responsive {
+        width: 250px;
+
+    }
+}
+
+@media only screen  and (min-width : 770px) and (max-width : 990px) {
+ .img-responsive {
+        width: 350px;
+
+    }
+}
+
+/*
+@media only screen  and (min-width : 991px) and (max-width : 1199px) {
+ .img-responsive {
+        width: 100%;
+    }
+}
+*/
+
+
