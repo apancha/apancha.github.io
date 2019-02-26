@@ -127,6 +127,22 @@ h4{
     }
 }
 
+@media (max-width: 575.98px) { 
+ .animatable, .animated {
+        animation-play-state: unset;
+        animation-duration: 0s;
+    }
+
+}
+
+@media (min-width: 576px) and (max-width: 767.98px) { 
+
+.animatable, .animated {
+        animation-play-state: unset;
+        animation-duration: 0s;
+    }
+}
+
 /*
 @media only screen  and (min-width : 991px) and (max-width : 1199px) {
  .img-responsive {
