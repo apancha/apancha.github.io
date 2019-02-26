@@ -1,3 +1,6 @@
+body {
+   overflow-x: hidden;
+}
 .navTop {
     background-color: #343a40;
     border-bottom: 2px solid aquamarine;
@@ -105,12 +108,22 @@ h4{
         width: 250px;
 
     }
+    
+    .animatable, .animated {
+        animation-play-state: unset;
+        animation-duration: 0s;
+    }
 }
 
 @media only screen  and (min-width : 770px) and (max-width : 990px) {
  .img-responsive {
         width: 350px;
 
+    }
+    
+     .animatable, .animated {
+        animation-play-state: unset;
+        animation-duration: 0s;
     }
 }
 
