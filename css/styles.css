@@ -132,6 +132,13 @@ h4{
         animation-play-state: unset;
         animation-duration: 0s;
     }
+    
+    .space{
+        margin: 0 auto; /* Added */
+        float: none; /* Added */
+        margin-bottom: 10px; /* Added */
+        display: flex;
+    }
 
 }
 
@@ -140,6 +147,15 @@ h4{
 .animatable, .animated {
         animation-play-state: unset;
         animation-duration: 0s;
+    }
+    .space{
+        width: 21.5em;
+        margin:0 auto;
+        margin-bottom: 15px;
+    }
+    
+    .pt-5{
+        padding-top: 0;
     }
 }
 
