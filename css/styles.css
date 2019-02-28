@@ -1,7 +1,8 @@
 body {
-   overflow-x: hidden;
-    background-color: #eaf2ff;
+    overflow-x: hidden;
+/*    background-color: #eaf2ff;*/
 }
+
 .navTop {
     background-color: #343a40;
     border-bottom: 2px solid aquamarine;
@@ -37,9 +38,10 @@ body {
 }
 
 .main-content {
+/*
     border: solid 2px darkgray;
     border-radius: 5px;
-    margin-top: 5%;
+*/
 }
 
 .myWrapper {
@@ -60,51 +62,58 @@ ul {
     list-style-type: none;
 }
 
-.heading-cv{
- color: darkcyan;
+.heading-cv {
+    color: darkcyan;
 }
 
-.hl-cv{
+.hl-cv {
     font-weight: bold;
     color: darkblue;
 }
 
-h5{
+h5 {
     color: darkblue;
 }
 
-h4{
+h4 {
     color: darkblue;
 }
 
 .card-img-wrap {
-  overflow: hidden;
-  position: relative;
-}
-.card-img-wrap:after {
-  content: '';
-  position: absolute;
-  top: 0; left: 0; right: 0; bottom: 0;
-  background: rgba(255,255,255,0.3);
-  opacity: 0;
-  transition: opacity .25s;
-}
-.card-img-wrap img {
-  transition: transform .25s;
-  width: 100%;
-}
-.card-img-wrap:hover img {
-  transform: scale(1.2);
-}
-.card-img-wrap:hover:after {
-  opacity: 1;
+    overflow: hidden;
+    position: relative;
 }
 
-.space{
+.card-img-wrap:after {
+    content: '';
+    position: absolute;
+    top: 0;
+    left: 0;
+    right: 0;
+    bottom: 0;
+    background: rgba(255, 255, 255, 0.3);
+    opacity: 0;
+    transition: opacity .25s;
+}
+
+.card-img-wrap img {
+    transition: transform .25s;
+    width: 100%;
+}
+
+.card-img-wrap:hover img {
+    transform: scale(1.2);
+}
+
+.card-img-wrap:hover:after {
+    opacity: 1;
+}
+
+.space {
     padding-bottom: 30px;
 }
 
-.modal-langs{
+.modal-langs {
     border: 2px solid cyan;
     border-radius: 50px;
     background-color: cyan;
@@ -120,53 +129,59 @@ h4{
         width: 250px;
 
     }
-    
-    .animatable, .animated {
+
+    .animatable,
+    .animated {
         animation-play-state: unset;
         animation-duration: 0s;
     }
 }
 
-@media only screen  and (min-width : 770px) and (max-width : 990px) {
- .img-responsive {
+@media only screen and (min-width : 770px) and (max-width : 990px) {
+    .img-responsive {
         width: 350px;
 
     }
-    
-     .animatable, .animated {
+
+    .animatable,
+    .animated {
         animation-play-state: unset;
         animation-duration: 0s;
     }
 }
 
-@media (max-width: 575.98px) { 
- .animatable, .animated {
+@media (max-width: 575.98px) {
+
+    .animatable,
+    .animated {
         animation-play-state: unset;
         animation-duration: 0s;
     }
-    
-    .space{
+
+    .space {
         width: 21.5em;
-        margin:0 auto;
+        margin: 0 auto;
         margin-bottom: 20px;
     }
 
 }
 
-@media (min-width: 576px) and (max-width: 767.98px) { 
+@media (min-width: 576px) and (max-width: 767.98px) {
 
-.animatable, .animated {
+    .animatable,
+    .animated {
         animation-play-state: unset;
         animation-duration: 0s;
     }
-    .space{
-        width: 21.5em;
-        margin:0 auto;
-        margin-bottom: 20px;
-}
-    
 
-/*
+    .space {
+        width: 21.5em;
+        margin: 0 auto;
+        margin-bottom: 20px;
+    }
+
+
+    /*
 @media only screen  and (min-width : 991px) and (max-width : 1199px) {
  .img-responsive {
         width: 100%;
@@ -174,4 +189,15 @@ h4{
 }
 */
 
+    .fill-height {
+        position: relative;
+        min-height: 100%;
+        height: 100vh;
+    }
 
+    #hello {
+        position: absolute;
+        top: 50%;
+        left: 50%;
+        transform: translate(-50%, -50%);
+    }
