@@ -1,6 +1,7 @@
 body {
     overflow-x: hidden;
-/*    background-color: #eaf2ff;*/
+    /*    background-color: #eaf2ff;*/
+    font-family: 'Montserrat', sans-serif;
 }
 
 .navTop {
@@ -38,7 +39,7 @@ body {
 }
 
 .main-content {
-/*
+    /*
     border: solid 2px darkgray;
     border-radius: 5px;
 */
@@ -120,6 +121,66 @@ h4 {
     padding: 3px;
 }
 
+.fill-height {
+    position: relative;
+    min-height: 100%;
+    height: 100vh;
+}
+
+#hello {
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+}
+
+.about-height {
+    height: 100vh;
+}
+
+.scrolltop {
+	display:none;
+	width:100%;
+	margin:0 auto;
+	position:fixed;
+	bottom:20px;
+	right:10px;	
+}
+.scroll {
+	position:absolute;
+	right:20px;
+	bottom:20px;
+	background:#b2b2b2;
+	background:rgba(178,178,178,0.7);
+	padding:20px;
+	text-align: center;
+	margin: 0 0 0 0;
+	cursor:pointer;
+	transition: 0.5s;
+	-moz-transition: 0.5s;
+	-webkit-transition: 0.5s;
+	-o-transition: 0.5s; 		
+}
+.scroll:hover {
+	background:rgba(178,178,178,1.0);
+	transition: 0.5s;
+	-moz-transition: 0.5s;
+	-webkit-transition: 0.5s;
+	-o-transition: 0.5s; 		
+}
+.scroll:hover .fa {
+	padding-top:-10px;
+}
+.scroll .fa {
+	font-size:30px;
+	margin-top:-5px;
+	margin-left:1px;
+	transition: 0.5s;
+	-moz-transition: 0.5s;
+	-webkit-transition: 0.5s;
+	-o-transition: 0.5s; 	
+}
+
 
 
 @media only screen and (max-width: 768px) {
@@ -135,6 +196,7 @@ h4 {
         animation-play-state: unset;
         animation-duration: 0s;
     }
+
 }
 
 @media only screen and (min-width : 770px) and (max-width : 990px) {
@@ -147,6 +209,10 @@ h4 {
     .animated {
         animation-play-state: unset;
         animation-duration: 0s;
+    }
+
+    .about-height {
+        height: auto;
     }
 }
 
@@ -162,6 +228,10 @@ h4 {
         width: 21.5em;
         margin: 0 auto;
         margin-bottom: 20px;
+    }
+
+    .about-height {
+        height: auto;
     }
 
 }
@@ -189,15 +259,4 @@ h4 {
 }
 */
 
-    .fill-height {
-        position: relative;
-        min-height: 100%;
-        height: 100vh;
-    }
 
-    #hello {
-        position: absolute;
-        top: 50%;
-        left: 50%;
-        transform: translate(-50%, -50%);
-    }
