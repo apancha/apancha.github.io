@@ -188,6 +188,10 @@ h4 {
 /*    border-left: 1px solid gray;*/
 }
 
+.contact-border{
+    border-right: solid 1px lightgray;
+}
+
 
 @media only screen and (max-width: 768px) {
 
@@ -222,6 +226,10 @@ h4 {
     .about-height {
         height: auto;
     }
+    .contact-border{
+        border-right:none;
+    }
+    
 }
 
 @media (max-width: 575.98px) {
@@ -242,6 +250,9 @@ h4 {
     .about-height {
         height: auto;
     }
+    .contact-border{
+        border-right:none;
+    }
 
 }
 
@@ -259,6 +270,11 @@ h4 {
         margin: 0 auto;
         margin-bottom: 20px;
     }
+    .contact-border{
+        border-right:none;
+    }
+    
+}
 
 
     /*
