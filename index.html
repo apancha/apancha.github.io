@@ -256,7 +256,7 @@
             <div class="row pt-5">
                 <div class="space col-md-4 animatable fadeInUp">
                     <a role="button" data-target="#ameraPaintModal" data-toggle="modal">
-                        <div class="card-img-wrap card" >
+                        <div class="card-img-wrap card">
                             <img class="card-img-top" src="/img/amerapaint.png" alt="Card image cap">
                             <div class="card-body">
                                 <p class="card-text">Website developed from scratch using Bootstrap 4, PHP, and JQuery. <span style="color: darkcyan">Click to read more.</span></p>
@@ -266,7 +266,7 @@
                 </div>
                 <div class="space col-md-4 animatable fadeInDown">
                     <a role="button" data-target="#keithMasonModal" data-toggle="modal">
-                        <div class="card-img-wrap card" >
+                        <div class="card-img-wrap card">
                             <img class="card-img-top" src="/img/kiethMason.png" alt="Card image cap">
                             <div class="card-body">
                                 <p class="card-text">Website developed from scratch using Bootstrap 4, PHP, and JQuery. <span style="color: darkcyan">Click to read more.</span></p>
@@ -277,7 +277,7 @@
 
                 <div class="space col-md-4 animatable fadeInUp">
                     <a role="button" data-target="#chemistryGameModal" data-toggle="modal">
-                        <div class="card-img-wrap card" >
+                        <div class="card-img-wrap card">
                             <img class="card-img-top" src="/img/chemistryGame.png" alt="Card image cap">
                             <div class="card-body">
                                 <p class="card-text">Game for chemistry department at GGC developed with C# in Unity. <span style="color: darkcyan">Click to read more.</span></p>
@@ -290,7 +290,7 @@
 
                 <div class="space col-md-4 animatable fadeInUp">
                     <a role="button" data-target="#tapiaModal" data-toggle="modal">
-                        <div class="card-img-wrap card" >
+                        <div class="card-img-wrap card">
                             <img class="card-img-top" src="/img/tap.jpg" alt="Card image cap">
                             <div class="card-body">
                                 <p class="card-text">Won 2nd place at the Richard Tapia conference for our TAP project. <span style="color: darkcyan">Click to read more.</span></p>
@@ -300,7 +300,7 @@
                 </div>
                 <div class="space col-md-4 animatable fadeInDown">
                     <a role="button" data-target="#weatherAppModal" data-toggle="modal">
-                        <div class="card-img-wrap card" >
+                        <div class="card-img-wrap card">
                             <img class="card-img-top" src="/img/weatherApp.png" alt="Card image cap">
                             <div class="card-body">
                                 <p class="card-text">Weather Application, using REST, Java, Spring, and MySQL on Linux Server. <span style="color: darkcyan">Click to read more.</span></p>
@@ -311,7 +311,7 @@
 
                 <div class="space col-md-4 animatable fadeInUp">
                     <a role="button" data-target="#javaCertModal" data-toggle="modal">
-                        <div class="card-img-wrap card" >
+                        <div class="card-img-wrap card">
                             <img class="card-img-top" src="/img/java.png" alt="Card image cap">
                             <div class="card-body">
                                 <p class="card-text">Java 8 certification through BrainBench. Aquired Feb 2019. <span style="color: darkcyan">Click to read more.</span></p>
@@ -321,7 +321,7 @@
                 </div>
 
                 <div class="space col-md-4 animatable fadeInUp">
-                    <div class="card-img-wrap card" >
+                    <div class="card-img-wrap card">
                         <img class="card-img-top" src="/img/amerapaint.png" alt="Card image cap">
                         <div class="card-body">
                             <p class="card-text"><span style="color: darkcyan">Click to read more.</span></p>
@@ -329,7 +329,7 @@
                     </div>
                 </div>
                 <div class="space col-md-4 animatable fadeInDown">
-                    <div class="card-img-wrap card" >
+                    <div class="card-img-wrap card">
                         <img class="card-img-top" src="/img/amerapaint.png" alt="Card image cap">
                         <div class="card-body">
                             <p class="card-text"><span style="color: darkcyan">Click to read more.</span></p>
@@ -337,7 +337,7 @@
                     </div>
                 </div>
                 <div class="space col-md-4 animatable fadeInUp">
-                    <div class="card-img-wrap card" >
+                    <div class="card-img-wrap card">
                         <img class="card-img-top" src="/img/amerapaint.png" alt="Card image cap">
                         <div class="card-body">
                             <p class="card-text"><span style="color: darkcyan">Click to read more.</span></p>
@@ -550,12 +550,44 @@
                     <h3 class="animatable fadeInUp heading-cv text-center">Contact Me</h3>
                     <hr>
                 </div>
-                <div class="col-12 text-center">
-                    <h2 style="color: white;">
-                        Hello, I'm <span style="color: aquamarine">Anjan Panchatcharam</span>.
-                        <br>
-                        Software Developer.
-                    </h2>
+                <div class="col-12 py-5">
+                    <form id="contact-form" method="post" action="contact.php" role="form">
+
+                        <div class="messages"></div>
+
+                        <div class="controls">
+
+                            <div class="row">
+                                <div class="col-md-6">
+                                    <div class="form-group">
+                                        <label for="form_name" class="py-1" style="color:darkcyan; font-weight:500;">Name: </label>
+                                        <input id="form_name" type="text" name="name" class="form-control" placeholder="Please enter your firstname *" required="required" data-error="Firstname is required.">
+                                        <div class="help-block with-errors"></div>
+                                    </div>
+                                </div>
+                                  <div class="col-md-6">
+                                    <div class="form-group">
+                                        <label for="form_email" class="py-1" style="color:darkcyan; font-weight:500;">Email: </label>
+                                        <input id="form_email" type="email" name="email" class="form-control" placeholder="Please enter your email *" required="required" data-error="Valid email is required.">
+                                        <div class="help-block with-errors"></div>
+                                    </div>
+                                </div>
+                            </div>
+                            <div class="row">
+                                <div class="col-md-12">
+                                    <div class="form-group">
+                                        <label for="form_message" class="py-1" style="color:darkcyan; font-weight:500;">Message: </label>
+                                        <textarea id="form_message" name="message" class="form-control" placeholder="Message for me *" rows="4" required="required" data-error="Please,leave me a message."></textarea>
+                                        <div class="help-block with-errors"></div>
+                                    </div>
+                                </div>
+                                <div class="col-md-12 text-center">
+                                    <input type="submit" class="btn btn-primary btn-send" style="border-radius: 0px;" value="Send message">
+                                </div>
+                            </div>
+                        </div>
+
+                    </form>
                 </div>
             </div>
         </div>

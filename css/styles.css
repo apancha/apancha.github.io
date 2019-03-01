@@ -181,6 +181,12 @@ h4 {
 	-o-transition: 0.5s; 	
 }
 
+.form-control{
+        background-color: #ffffff00;
+    border: none;
+    border-bottom: 1px solid gray;
+/*    border-left: 1px solid gray;*/
+}
 
 
 @media only screen and (max-width: 768px) {
