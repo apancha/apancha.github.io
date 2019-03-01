@@ -195,6 +195,7 @@ h4 {
     .animated {
         animation-play-state: unset;
         animation-duration: 0s;
+        visibility: visible;
     }
 
 }
@@ -209,6 +210,7 @@ h4 {
     .animated {
         animation-play-state: unset;
         animation-duration: 0s;
+        visibility: visible;
     }
 
     .about-height {
@@ -222,6 +224,7 @@ h4 {
     .animated {
         animation-play-state: unset;
         animation-duration: 0s;
+        visibility: visible;
     }
 
     .space {
@@ -242,6 +245,7 @@ h4 {
     .animated {
         animation-play-state: unset;
         animation-duration: 0s;
+        visibility: visible;
     }
 
     .space {
