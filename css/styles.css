@@ -251,14 +251,21 @@ h4 {
 
 @media (max-width: 575.98px) {
 
-    /*
-    .animatable,
-    .animated {
+
+/*
+    noanimate .animatable{
+        animation-play-state: unset;
+        animation-duration: 0s;
+        visibility: visible;
+    }
+    
+    noanimate .animated{
         animation-play-state: unset;
         animation-duration: 0s;
         visibility: visible;
     }
 */
+
 
     .dontoverflowpls {
         overflow-x: hidden;
@@ -278,7 +285,17 @@ h4 {
         border-right: none;
     }
 
+    .pt-5 {
+        padding-top: 0 !important;
+    }
+
+    .prof-img {
+        width: 40%;
+    }
+
 }
+
+
 
 @media (min-width: 576px) and (max-width: 767.98px) {
 
@@ -316,5 +333,19 @@ h4 {
  .img-responsive {
         width: 100%;
     }
+}
+*/
+
+/*
+.row{
+    border: solid 1px red;
+}
+
+.container{
+    border: solid 1px blue;
+}
+
+.col, .col-lg-12, .col-md-12, .col-lg-6, .col-lg-3, .col-lg-7{
+    border: solid 1px orange;
 }
 */

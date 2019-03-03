@@ -19,10 +19,10 @@ jQuery(function($) {
       $(window).off('scroll', doAnimations);
     }
     
-    // Check all animatables and animate them if necessary
+    // Check all animatables and animate them if necessary || change - <value> to decrease trigger height (more is less).
 		$animatables.each(function(i) {
        var $animatable = $(this);
-			if (($animatable.offset().top + $animatable.height() - 20) < offset) {
+			if (($animatable.offset().top + $animatable.height() - 150) < offset) {
         $animatable.removeClass('animatable').addClass('animated');
 			}
     });
