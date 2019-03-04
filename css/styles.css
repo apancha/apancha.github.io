@@ -248,6 +248,12 @@ h4 {
     }
 
 }
+/*IPAD PRO*/
+@media (max-width: 1024px) {
+.dontoverflowpls {
+        overflow-x: hidden;
+    }
+}
 
 @media (max-width: 575.98px) {
 
