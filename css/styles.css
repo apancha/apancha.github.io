@@ -60,7 +60,7 @@ body {
 }
 
 ul {
-    list-style-type: none;
+    padding-left: 15px;
 }
 
 .heading-cv {
@@ -248,9 +248,10 @@ h4 {
     }
 
 }
+
 /*IPAD PRO*/
 @media (max-width: 1024px) {
-.dontoverflowpls {
+    .dontoverflowpls {
         overflow-x: hidden;
     }
 }
@@ -258,7 +259,7 @@ h4 {
 @media (max-width: 575.98px) {
 
 
-/*
+    /*
     noanimate .animatable{
         animation-play-state: unset;
         animation-duration: 0s;
@@ -353,5 +354,19 @@ h4 {
 
 .col, .col-lg-12, .col-md-12, .col-lg-6, .col-lg-3, .col-lg-7{
     border: solid 1px orange;
+}
+*/
+
+
+/*
+ul {
+    list-style-type: none;
+}
+
+ul li:before {
+    font-family: 'FontAwesome';
+    content: '\f101';
+    margin: 0 5px 0 -15px;
+    color: black;
 }
 */
